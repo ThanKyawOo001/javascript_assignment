@@ -1,0 +1,31 @@
+<html>
+<body>
+    <h3>Today Fruits</h3>
+    <ul id="fruit-list"></ul>
+
+    <hr>
+
+    <h3>Today Vegetables</h3>
+    <ul id="veg-list"></ul>
+
+    <script>
+        // Arrays
+        let fruits = ["Apple", "Banana", "Orange", "Mango", "Strawberry"];
+        let vegetables = ["Carrot", "Broccoli", "Spinach", "Tomato", "Cucumber"];
+
+        // Get UL elements
+        let fruitList = document.getElementById("fruit-list");
+        let vegList = document.getElementById("veg-list");
+
+        // Add fruits
+        fruits.forEach(function(fruit) {
+            fruitList.innerHTML += `<li>${fruit}</li>`;
+        });
+
+        // Add vegetables
+        vegetables.forEach(function(vegetable) {
+            vegList.innerHTML += `<li>${vegetable}</li>`;
+        });
+    </script>
+</body>
+</html>
